@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "4jeF9SMF/rY8E1ZSN9WPceTFuAXDqfdt2ddLlOr+SxftuAZfJh9A1IaccBaQfhdXIud26JlnGFQc/4P2M/RFWQ==",
+  "success": true,
+  "projectFilePath": "C:\\repo\\WebApiBoostrapper\\WebApiBoostrapper\\WebApiBoostrapper.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\muasf\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
+    "C:\\Users\\muasf\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
+    "C:\\Users\\muasf\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.0.0\\microsoft.extensions.dependencyinjection.abstractions.2.0.0.nupkg.sha512",
+    "C:\\Users\\muasf\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512"
+  ],
+  "logs": []
+}
