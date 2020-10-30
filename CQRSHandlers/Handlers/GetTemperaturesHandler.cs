@@ -18,17 +18,13 @@ namespace WebApiBoostrapper.Handlers
         public async Task<IEnumerable<WeatherForecast>> Handle(GetTemperaturesQuery request, CancellationToken cancellationToken)
         {
             var rng = new Random();
-            var result = Task.Run(() =>
-                Enumerable.Range(1, 5).Select(index => new WeatherForecast
-                    {
-                        Date = DateTime.Now.AddDays(index),
-                        TemperatureC = rng.Next(-20, 55),
-                        Summary = Summaries[rng.Next(Summaries.Length)]
-                    })
-                    .ToArray()
-
-            );
-            return  await result;
+            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+                {
+                    Date = DateTime.Now.AddDays(index),
+                    TemperatureC = rng.Next(-20, 55),
+                    Summary = Summaries[rng.Next(Summaries.Length)]
+                })
+                .ToArray();
         }
     }
 }

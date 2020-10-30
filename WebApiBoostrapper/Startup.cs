@@ -11,6 +11,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using WebApiBoostrapper.Services;
+
 
 namespace WebApiBoostrapper
 {
@@ -28,6 +30,7 @@ namespace WebApiBoostrapper
         {
             services.AddControllers();
             services.AddMediatR(typeof(Startup));
+            services.AddTransient<INotifierMediatorService, NotifierMediatorService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

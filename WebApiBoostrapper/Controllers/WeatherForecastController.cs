@@ -6,6 +6,7 @@ using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using WebApiBoostrapper.Queries;
+using WebApiBoostrapper.Services;
 
 namespace WebApiBoostrapper.Controllers
 {
@@ -17,11 +18,13 @@ namespace WebApiBoostrapper.Controllers
         private readonly ILogger<WeatherForecastController> _logger;
 
         private readonly IMediator _mediator;
+        private  readonly INotifierMediatorService _notifierMediatorService;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger, IMediator mediator)
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, IMediator mediator, INotifierMediatorService notifierMediatorService)
         {
             _logger = logger;
             _mediator = mediator;
+            _notifierMediatorService = notifierMediatorService;
         }
 
         [HttpGet]
@@ -31,6 +34,7 @@ namespace WebApiBoostrapper.Controllers
             var query = new GetTemperaturesQuery();
             var result = await _mediator.Send(query);
 
+            _notifierMediatorService.Notify("Calling Gettemperature Endpoint. ");
             return Ok(result);
 
           

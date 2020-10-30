@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "wP5VphRriHb+PT/OgLiPPXBlCkFU2qw++Z9PP0jqEGRdaK4kPqTg3/ny7vjDuv3pdSMffWCKjvvRy6rzNoPCMA==",
+  "success": true,
+  "projectFilePath": "C:\\repo\\WebApiBoostrapper\\CQRSHandlers\\CQRSHandlers.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\muasf\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\muasf\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

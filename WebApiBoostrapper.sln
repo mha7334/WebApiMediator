@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiBoostrapper", "WebApiBoostrapper\WebApiBoostrapper.csproj", "{261C62C4-9526-4B06-8DDA-9F02A34C2234}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiBoostrapper", "WebApiBoostrapper\WebApiBoostrapper.csproj", "{261C62C4-9526-4B06-8DDA-9F02A34C2234}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
